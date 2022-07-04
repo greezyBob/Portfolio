@@ -57,14 +57,14 @@ a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45%;
+  height: 80%;
   background: #2D3748;
   color: white;
 }
 
 .typewriter {
   position: relative;
-  height: 7%;
+  height: 4%;
   font-family: 'IBM Plex Mono', monospace;
 }
 .typewriter::before,
