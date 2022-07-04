@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #2D3748;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.nav{
+  background-color: #525f76;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 12px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav > p {
+  padding: 10px;
+
+}
+
+.nav > p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+main {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  background: #2D3748;
+  color: white;
+}
+
+.typewriter {
+  position: relative;
+  height: 7%;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.typewriter::before,
+.typewriter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.typewriter::before {
+  background-color: #2D3748;
+  animation:
+    typewriter 4s steps(58) 1s forwards;
+}
+.typewriter::after {
+  width: 0.125em;
+  background-color: white;
+  animation:
+    typewriter 4s steps(58) 1s forwards,
+    blink 750ms steps(58) infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 100%
+  }
+}
+@keyframes blink {
+  to {
+    background-color: transparent;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  background-color: white;
+  color: black;
+}
+
+.skills > div {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.skill > img {
+ width: 24px;
+}
+
+#django {
+  width: 50px;
+  height: 23px;
+ }
+
+.project-section {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 950px;
+  margin: 0 auto;
+  gap: 1em;
+}
+
+.project {
+  padding: 5px 10px;
+  border: 0.5px solid #A0AEC0;
+  border-radius: 3px;
+  width: 45%;
+  min-width: 400px;
+}
+
+.project > p {
+  margin: 8px 0;
+}
+
+
+
+a > img {
+  width: 24px;
+  margin: 2px 5px;
+  background: white;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+.contact-circle {
+  background-color: #525f76;
+  border-radius: 100%;
+  height: 350px;
+  width: 350px;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.inner-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-title {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.inner-circle > p {
+  font-size: 1.1rem;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.inner-circle > p:hover {
+  transform: scale(1.1);
+}
