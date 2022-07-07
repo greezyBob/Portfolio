@@ -6,7 +6,7 @@ body {
   color: white;
 }
 
-.nav{
+.nav {
   background-color: #525f76;
   display: flex;
   justify-content: flex-end;
@@ -14,13 +14,15 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
-.nav > p {
+
+.nav>p {
   padding: 10px;
 
 }
 
-.nav > p:hover {
+.nav>p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -40,7 +42,7 @@ p {
 
 h3 {
   padding: 0;
-  margin: 0 0 10px 0;
+  margin: 0 0 0 0;
 }
 
 a {
@@ -48,25 +50,31 @@ a {
   color: inherit;
 }
 
-a:hover{
+a:hover {
   cursor: pointer;
 }
 
 
 .hero {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 8rem;
   align-items: center;
   height: 80%;
   background: #2D3748;
   color: white;
 }
 
+
+
 .typewriter {
   position: relative;
   height: 4%;
   font-family: 'IBM Plex Mono', monospace;
+  
 }
+
 .typewriter::before,
 .typewriter::after {
   content: '';
@@ -76,11 +84,13 @@ a:hover{
   bottom: 0;
   left: 0;
 }
+
 .typewriter::before {
   background-color: #2D3748;
   animation:
     typewriter 4s steps(58) 1s forwards;
 }
+
 .typewriter::after {
   width: 0.125em;
   background-color: white;
@@ -88,15 +98,27 @@ a:hover{
     typewriter 4s steps(58) 1s forwards,
     blink 750ms steps(58) infinite;
 }
+
 @keyframes typewriter {
   to {
     left: 100%
   }
 }
+
 @keyframes blink {
   to {
     background-color: transparent;
   }
+}
+
+.about {
+  width: 70%;
+  text-align: center;
+}
+
+.about > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .skills {
@@ -109,7 +131,7 @@ a:hover{
   color: black;
 }
 
-.skills > div {
+.skills>div {
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
@@ -117,14 +139,14 @@ a:hover{
   margin: 10px;
 }
 
-.skill > img {
- width: 24px;
+.skill>img {
+  width: 24px;
 }
 
 #django {
   width: 50px;
   height: 23px;
- }
+}
 
 .project-section {
   text-align: center;
@@ -147,13 +169,13 @@ a:hover{
   min-width: 400px;
 }
 
-.project > p {
+.project>p {
   margin: 8px 0;
 }
 
 
 
-a > img {
+a>img {
   width: 24px;
   margin: 2px 5px;
   background: white;
@@ -167,12 +189,33 @@ a > img {
   padding-bottom: 20px;
 }
 
+/* .about {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+} */
+
+.about-title {
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+
+.about-text{
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 60%;
+  background-color: #525f76;
+}
+
 .contact-circle {
   background-color: #525f76;
   border-radius: 100%;
   height: 350px;
   width: 350px;
   margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -192,12 +235,12 @@ a > img {
   margin-top: 20px;
 }
 
-.inner-circle > p {
+.inner-circle>p {
   font-size: 1.1rem;
   padding: 10px;
   transition: all .3s ease-in-out;
 }
 
-.inner-circle > p:hover {
+.inner-circle>p:hover {
   transform: scale(1.1);
 }
