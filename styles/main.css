@@ -59,7 +59,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
   align-items: center;
   height: 80%;
   background: #2D3748;
